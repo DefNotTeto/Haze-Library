@@ -2,7 +2,7 @@ local run = game:GetService('RunService')
 local uis = game:GetService('UserInputService')
 local core = game:GetService('CoreGui')
 local cas = game:GetService('ContextActionService')
---
+
 if shared.savedObjects then
     for _, object in ipairs(shared.savedObjects) do
         pcall(function() object:Remove() end)
